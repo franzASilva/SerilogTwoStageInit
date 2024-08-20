@@ -8,5 +8,5 @@
 
 
 **Exceptions thrown during set-up**
-![image](https://github.com/user-attachments/assets/95150d83-b66c-483c-93ed-6d6fd043d10e)
+![image](https://github.com/user-attachments/assets/dd7eaad0-4f1b-4dc2-bc9d-0f00e1a45862)
 
