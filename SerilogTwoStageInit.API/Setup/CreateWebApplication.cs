@@ -18,6 +18,8 @@ internal static class CreateWebApplication
             .MinimumLevel.Override("Microsoft.AspNetCore", LogEventLevel.Information)
             .ReadFrom.Configuration(builder.Configuration)
             .ReadFrom.Services(services)
+            .Enrich.WithCorrelationId()
+            .Enrich.WithCorrelationIdHeader()
             .Enrich.FromLogContext()
             .Enrich.WithExceptionDetails();
 
@@ -27,9 +29,11 @@ internal static class CreateWebApplication
             }
             else
             {
-                lc.WriteTo.Console(outputTemplate: "[{Timestamp:HH:mm:ss} {Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}");
+                lc.WriteTo.Console(outputTemplate: "[{CorrelationId} - {Timestamp:HH:mm:ss} {Level:u3}] [{SourceContext}] {Message:lj}{NewLine}{Exception}");
             }
         });
+
+        builder.Services.AddHttpContextAccessor();
 
         builder.Services.AddMediatR(config =>
         {
