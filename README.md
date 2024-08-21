@@ -2,6 +2,7 @@
 **This has the benefit of catching and reporting exceptions thrown during set-up of the ASP.NET Core host.**
 **CorrelationId to track all the logs belonging to the same request**
 - [.NET 8](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview);
+- [Serilog](https://github.com/serilog/serilog)
 - [MediatR](https://github.com/jbogard/MediatR)
 
 
