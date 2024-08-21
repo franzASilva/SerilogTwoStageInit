@@ -4,6 +4,11 @@
 - [.NET 8](https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-8/overview);
 - [MediatR](https://github.com/jbogard/MediatR)
 
+
+**Exceptions thrown during set-up**
+![image](https://github.com/user-attachments/assets/dd7eaad0-4f1b-4dc2-bc9d-0f00e1a45862)
+
+
 **Testing - appsettings.json -> "UseJsonLog": false**
 ![image](https://github.com/user-attachments/assets/9ab7e5b1-acbd-40b5-9b5e-8d66e0af30c0)
 
@@ -450,8 +455,4 @@
     }
 }
 ```
-
-
-**Exceptions thrown during set-up**
-![image](https://github.com/user-attachments/assets/dd7eaad0-4f1b-4dc2-bc9d-0f00e1a45862)
 
